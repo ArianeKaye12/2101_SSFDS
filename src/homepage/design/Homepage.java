@@ -3,7 +3,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
  */
 package homepage.design;
-
+import javax.swing.*;
 /**
  *
  * @author Noreen Grace G
@@ -30,10 +30,9 @@ public class Homepage extends javax.swing.JFrame {
         jPanel1 = new javax.swing.JPanel();
         jLabel11 = new javax.swing.JLabel();
         Home = new javax.swing.JButton();
-        services = new javax.swing.JButton();
         AboutUs = new javax.swing.JButton();
         Shop = new javax.swing.JButton();
-        jButton1 = new javax.swing.JButton();
+        Contacts = new javax.swing.JButton();
         BookAppointment = new javax.swing.JButton();
         jLabel3 = new javax.swing.JLabel();
         jLabel4 = new javax.swing.JLabel();
@@ -48,30 +47,42 @@ public class Homepage extends javax.swing.JFrame {
         jLabel19 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
         jLabel20 = new javax.swing.JLabel();
-        jButton7 = new javax.swing.JButton();
-        jButton5 = new javax.swing.JButton();
+        booking = new javax.swing.JButton();
         jLabel12 = new javax.swing.JLabel();
         jLabel13 = new javax.swing.JLabel();
         jLabel14 = new javax.swing.JLabel();
         jLabel1 = new javax.swing.JLabel();
+        jLabel17 = new javax.swing.JLabel();
+        jLabel22 = new javax.swing.JLabel();
         jLabel15 = new javax.swing.JLabel();
         jLabel16 = new javax.swing.JLabel();
-        jLabel17 = new javax.swing.JLabel();
-        jLabel18 = new javax.swing.JLabel();
+        jLabel23 = new javax.swing.JLabel();
+        jLabel24 = new javax.swing.JLabel();
+        jLabel25 = new javax.swing.JLabel();
+        jLabel26 = new javax.swing.JLabel();
+        jLabel27 = new javax.swing.JLabel();
+        jLabel28 = new javax.swing.JLabel();
+        jLabel29 = new javax.swing.JLabel();
+        jLabel30 = new javax.swing.JLabel();
+        jLabel31 = new javax.swing.JLabel();
+        jLabel32 = new javax.swing.JLabel();
+        jLabel34 = new javax.swing.JLabel();
+        Shop1 = new javax.swing.JButton();
+        Services = new javax.swing.JButton();
         background = new javax.swing.JLabel();
+        jLabel18 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setPreferredSize(new java.awt.Dimension(780, 1620));
 
         jScrollPane1.setPreferredSize(new java.awt.Dimension(780, 1620));
 
         jPanel1.setPreferredSize(new java.awt.Dimension(780, 1620));
         jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jLabel11.setIcon(new javax.swing.ImageIcon("C:\\Users\\Noreen Grace G\\OneDrive\\Pictures\\Documents\\NetBeansProjects\\BeautySalonAndSpa\\src\\Pictures\\462537887_580053814602662_2758245647023974022_n.png")); // NOI18N
-        jPanel1.add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 10, -1, 60));
+        jLabel11.setIcon(new javax.swing.ImageIcon("C:\\Users\\Noreen Grace G\\OneDrive\\Pictures\\Documents\\NetBeansProjects\\Homepage Design\\src\\pictures\\whiteLogo.png")); // NOI18N
+        jPanel1.add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 10, 150, 60));
 
-        Home.setBackground(new java.awt.Color(0, 0, 0));
+        Home.setBackground(new java.awt.Color(51, 0, 0));
         Home.setFont(new java.awt.Font("Segoe UI Light", 0, 12)); // NOI18N
         Home.setForeground(new java.awt.Color(255, 255, 255));
         Home.setText("Home");
@@ -82,13 +93,7 @@ public class Homepage extends javax.swing.JFrame {
         });
         jPanel1.add(Home, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 30, 70, -1));
 
-        services.setBackground(new java.awt.Color(0, 0, 0));
-        services.setFont(new java.awt.Font("Segoe UI Light", 0, 12)); // NOI18N
-        services.setForeground(new java.awt.Color(255, 255, 255));
-        services.setText("Services");
-        jPanel1.add(services, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 30, 80, -1));
-
-        AboutUs.setBackground(new java.awt.Color(0, 0, 0));
+        AboutUs.setBackground(new java.awt.Color(51, 0, 0));
         AboutUs.setFont(new java.awt.Font("Segoe UI Light", 0, 12)); // NOI18N
         AboutUs.setForeground(new java.awt.Color(255, 255, 255));
         AboutUs.setText("About Us");
@@ -99,24 +104,29 @@ public class Homepage extends javax.swing.JFrame {
         });
         jPanel1.add(AboutUs, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 30, 80, -1));
 
-        Shop.setBackground(new java.awt.Color(0, 0, 0));
+        Shop.setBackground(new java.awt.Color(51, 0, 0));
         Shop.setFont(new java.awt.Font("Segoe UI Light", 0, 12)); // NOI18N
         Shop.setForeground(new java.awt.Color(255, 255, 255));
-        Shop.setText("Shop");
-        jPanel1.add(Shop, new org.netbeans.lib.awtextra.AbsoluteConstraints(440, 30, 60, -1));
-
-        jButton1.setBackground(new java.awt.Color(0, 0, 0));
-        jButton1.setFont(new java.awt.Font("Segoe UI Light", 0, 12)); // NOI18N
-        jButton1.setForeground(new java.awt.Color(255, 255, 255));
-        jButton1.setText("Contacts");
-        jButton1.addActionListener(new java.awt.event.ActionListener() {
+        Shop.setText("SHOP");
+        Shop.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton1ActionPerformed(evt);
+                ShopActionPerformed(evt);
             }
         });
-        jPanel1.add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(510, 30, -1, -1));
+        jPanel1.add(Shop, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 1280, 130, 40));
 
-        BookAppointment.setBackground(new java.awt.Color(0, 0, 0));
+        Contacts.setBackground(new java.awt.Color(51, 0, 0));
+        Contacts.setFont(new java.awt.Font("Segoe UI Light", 0, 12)); // NOI18N
+        Contacts.setForeground(new java.awt.Color(255, 255, 255));
+        Contacts.setText("Contacts");
+        Contacts.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                ContactsActionPerformed(evt);
+            }
+        });
+        jPanel1.add(Contacts, new org.netbeans.lib.awtextra.AbsoluteConstraints(510, 30, -1, -1));
+
+        BookAppointment.setBackground(new java.awt.Color(51, 0, 0));
         BookAppointment.setFont(new java.awt.Font("Segoe UI Light", 0, 12)); // NOI18N
         BookAppointment.setForeground(new java.awt.Color(255, 255, 255));
         BookAppointment.setText("BOOK APPOINTMENT");
@@ -142,10 +152,10 @@ public class Homepage extends javax.swing.JFrame {
         jLabel21.setText("SERVICES WE OFFER");
         jPanel1.add(jLabel21, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 300, -1, -1));
 
-        nailPic.setIcon(new javax.swing.ImageIcon("C:\\Users\\Noreen Grace G\\OneDrive\\Pictures\\Documents\\NetBeansProjects\\BeautySalonAndSpa\\src\\Pictures\\kuko.jpg")); // NOI18N
+        nailPic.setIcon(new javax.swing.ImageIcon("C:\\Users\\Noreen Grace G\\OneDrive\\Pictures\\Documents\\NetBeansProjects\\Homepage Design\\src\\pictures\\nail.jpg")); // NOI18N
         jPanel1.add(nailPic, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 360, 200, 270));
 
-        jLabel5.setIcon(new javax.swing.ImageIcon("C:\\Users\\Noreen Grace G\\OneDrive\\Pictures\\Documents\\NetBeansProjects\\BeautySalonAndSpa\\src\\Pictures\\masahe.jpg")); // NOI18N
+        jLabel5.setIcon(new javax.swing.ImageIcon("C:\\Users\\Noreen Grace G\\OneDrive\\Pictures\\Documents\\NetBeansProjects\\Homepage Design\\src\\pictures\\masahe.jpg")); // NOI18N
         jPanel1.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 360, 200, 270));
 
         jLabel7.setIcon(new javax.swing.ImageIcon("C:\\Users\\Noreen Grace G\\OneDrive\\Pictures\\Documents\\NetBeansProjects\\BeautySalonAndSpa\\src\\Pictures\\hair.jpg")); // NOI18N
@@ -171,11 +181,11 @@ public class Homepage extends javax.swing.JFrame {
         jLabel6.setText("What Makes Us The Best Salon And Spa");
         jPanel1.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 720, -1, -1));
 
-        jLabel19.setIcon(new javax.swing.ImageIcon("C:\\Users\\Noreen Grace G\\OneDrive\\Pictures\\Documents\\NetBeansProjects\\BeautySalonAndSpa\\src\\Pictures\\Brown Vintage Watercolor Creative Portfolio Presentation (2).png")); // NOI18N
+        jLabel19.setIcon(new javax.swing.ImageIcon("C:\\Users\\Noreen Grace G\\OneDrive\\Pictures\\Documents\\NetBeansProjects\\Homepage Design\\src\\pictures\\redDescrip.png")); // NOI18N
         jLabel19.setText("jLabel19");
         jPanel1.add(jLabel19, new org.netbeans.lib.awtextra.AbsoluteConstraints(-10, 760, 790, 280));
 
-        jLabel2.setIcon(new javax.swing.ImageIcon("C:\\Users\\Noreen Grace G\\OneDrive\\Pictures\\Documents\\NetBeansProjects\\BeautySalonAndSpa\\src\\Pictures\\products.jpg")); // NOI18N
+        jLabel2.setIcon(new javax.swing.ImageIcon("C:\\Users\\Noreen Grace G\\OneDrive\\Pictures\\Documents\\NetBeansProjects\\Homepage Design\\src\\pictures\\products.jpg")); // NOI18N
         jLabel2.setText("jLabel2");
         jPanel1.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 1090, 210, 180));
 
@@ -183,58 +193,122 @@ public class Homepage extends javax.swing.JFrame {
         jLabel20.setText("jLabel20");
         jPanel1.add(jLabel20, new org.netbeans.lib.awtextra.AbsoluteConstraints(440, 1090, 200, 180));
 
-        jButton7.setBackground(new java.awt.Color(0, 0, 0));
-        jButton7.setFont(new java.awt.Font("Segoe UI Light", 0, 12)); // NOI18N
-        jButton7.setForeground(new java.awt.Color(255, 255, 255));
-        jButton7.setText("SHOP THE PRODUCTS");
-        jPanel1.add(jButton7, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 1280, -1, 40));
+        booking.setBackground(new java.awt.Color(51, 0, 0));
+        booking.setFont(new java.awt.Font("Segoe UI Light", 0, 12)); // NOI18N
+        booking.setForeground(new java.awt.Color(255, 255, 255));
+        booking.setText("BOOK APPOINTMENT");
+        booking.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                bookingActionPerformed(evt);
+            }
+        });
+        jPanel1.add(booking, new org.netbeans.lib.awtextra.AbsoluteConstraints(470, 1280, -1, 40));
 
-        jButton5.setBackground(new java.awt.Color(0, 0, 0));
-        jButton5.setFont(new java.awt.Font("Segoe UI Light", 0, 12)); // NOI18N
-        jButton5.setForeground(new java.awt.Color(255, 255, 255));
-        jButton5.setText("BOOK APPOINTMENT");
-        jPanel1.add(jButton5, new org.netbeans.lib.awtextra.AbsoluteConstraints(470, 1280, -1, 40));
+        jLabel12.setIcon(new javax.swing.ImageIcon("C:\\Users\\Noreen Grace G\\OneDrive\\Pictures\\Documents\\NetBeansProjects\\Homepage Design\\src\\pictures\\whiteLogo.png")); // NOI18N
+        jPanel1.add(jLabel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 1430, 150, 80));
 
-        jLabel12.setIcon(new javax.swing.ImageIcon("C:\\Users\\Noreen Grace G\\OneDrive\\Pictures\\Documents\\NetBeansProjects\\BeautySalonAndSpa\\src\\Pictures\\462537887_580053814602662_2758245647023974022_n.png")); // NOI18N
-        jPanel1.add(jLabel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 1350, -1, -1));
-
-        jLabel13.setFont(new java.awt.Font("Segoe UI Semibold", 0, 12)); // NOI18N
+        jLabel13.setFont(new java.awt.Font("Segoe UI Semilight", 0, 12)); // NOI18N
         jLabel13.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel13.setText("BGRY BUCANA NASUGBU BATANGAS - Batangas State University TNEU - ARASOF");
-        jPanel1.add(jLabel13, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 1440, -1, -1));
+        jLabel13.setText("Tue: 7:00 am - 6:00 pm");
+        jPanel1.add(jLabel13, new org.netbeans.lib.awtextra.AbsoluteConstraints(590, 1490, -1, -1));
 
-        jLabel14.setFont(new java.awt.Font("Segoe UI Semibold", 0, 12)); // NOI18N
+        jLabel14.setFont(new java.awt.Font("Segoe UI Semilight", 1, 12)); // NOI18N
         jLabel14.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel14.setText("222.888.7770");
-        jPanel1.add(jLabel14, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 1460, -1, 20));
+        jLabel14.setText("SCHEDULE");
+        jPanel1.add(jLabel14, new org.netbeans.lib.awtextra.AbsoluteConstraints(590, 1430, 70, 30));
 
-        jLabel1.setFont(new java.awt.Font("Segoe UI Semibold", 0, 12)); // NOI18N
+        jLabel1.setFont(new java.awt.Font("Segoe UI Semilight", 0, 12)); // NOI18N
         jLabel1.setForeground(new java.awt.Color(255, 255, 255));
         jLabel1.setText("INFO@VANSALONANDSPA.COM");
-        jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 1480, -1, 20));
+        jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 1510, -1, 20));
 
-        jLabel15.setFont(new java.awt.Font("Segoe UI Semibold", 0, 12)); // NOI18N
-        jLabel15.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel15.setText("MON -  SAT 10AM - 9PM / SUN 10AM - 5PM");
-        jPanel1.add(jLabel15, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 1500, 250, 20));
-
-        jLabel16.setFont(new java.awt.Font("Segoe UI Semibold", 0, 12)); // NOI18N
-        jLabel16.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel16.setText("Privacy policy");
-        jPanel1.add(jLabel16, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 1560, -1, -1));
-
-        jLabel17.setFont(new java.awt.Font("Segoe UI Semibold", 0, 12)); // NOI18N
+        jLabel17.setFont(new java.awt.Font("Segoe UI Light", 0, 12)); // NOI18N
         jLabel17.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel17.setText("© 2024 CHOOSE US AGENCY ALL RIGHTS RESERVED.");
+        jLabel17.setText("© 2024 VAN Salon and Spa | All Rights Reserved | Privacy Policy ");
         jPanel1.add(jLabel17, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 1580, -1, -1));
+
+        jLabel22.setFont(new java.awt.Font("Segoe UI Semilight", 0, 12)); // NOI18N
+        jLabel22.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel22.setText("222.888.7770");
+        jPanel1.add(jLabel22, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 1490, -1, 20));
+
+        jLabel15.setIcon(new javax.swing.ImageIcon("C:\\Users\\Noreen Grace G\\OneDrive\\Pictures\\Documents\\NetBeansProjects\\BeautySalonAndSpa\\src\\Pictures\\Pi7_phone.png")); // NOI18N
+        jPanel1.add(jLabel15, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 1490, 30, -1));
+
+        jLabel16.setIcon(new javax.swing.ImageIcon("C:\\Users\\Noreen Grace G\\OneDrive\\Pictures\\Documents\\NetBeansProjects\\BeautySalonAndSpa\\src\\Pictures\\Pi7_instagram.png")); // NOI18N
+        jPanel1.add(jLabel16, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 1500, -1, 20));
+        jPanel1.add(jLabel23, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 1470, 30, 20));
+
+        jLabel24.setIcon(new javax.swing.ImageIcon("C:\\Users\\Noreen Grace G\\OneDrive\\Pictures\\Documents\\NetBeansProjects\\BeautySalonAndSpa\\src\\Pictures\\Pi7_facebook.png")); // NOI18N
+        jPanel1.add(jLabel24, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 1500, 30, 20));
+
+        jLabel25.setIcon(new javax.swing.ImageIcon("C:\\Users\\Noreen Grace G\\OneDrive\\Pictures\\Documents\\NetBeansProjects\\BeautySalonAndSpa\\src\\Pictures\\Pi7_tiktok.png")); // NOI18N
+        jPanel1.add(jLabel25, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 1500, 30, 20));
+
+        jLabel26.setIcon(new javax.swing.ImageIcon("C:\\Users\\Noreen Grace G\\OneDrive\\Pictures\\Documents\\NetBeansProjects\\BeautySalonAndSpa\\src\\Pictures\\Pi7_twitter.png")); // NOI18N
+        jPanel1.add(jLabel26, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 1500, 30, 20));
+
+        jLabel27.setIcon(new javax.swing.ImageIcon("C:\\Users\\Noreen Grace G\\OneDrive\\Pictures\\Documents\\NetBeansProjects\\BeautySalonAndSpa\\src\\Pictures\\Pi7_envelope-of-white-paper.png")); // NOI18N
+        jPanel1.add(jLabel27, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 1510, 30, 20));
+
+        jLabel28.setFont(new java.awt.Font("Segoe UI Semilight", 1, 12)); // NOI18N
+        jLabel28.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel28.setText("CONTACT");
+        jPanel1.add(jLabel28, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 1440, -1, 20));
+
+        jLabel29.setFont(new java.awt.Font("Segoe UI Semilight", 0, 12)); // NOI18N
+        jLabel29.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel29.setText("BGRY BUCANA NASUGBU BATANGAS ");
+        jPanel1.add(jLabel29, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 1470, -1, -1));
+
+        jLabel30.setFont(new java.awt.Font("Segoe UI Semilight", 0, 12)); // NOI18N
+        jLabel30.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel30.setText("Wed: 7:00 am - 6:00 pm");
+        jPanel1.add(jLabel30, new org.netbeans.lib.awtextra.AbsoluteConstraints(590, 1510, -1, -1));
+
+        jLabel31.setFont(new java.awt.Font("Segoe UI Semilight", 0, 12)); // NOI18N
+        jLabel31.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel31.setText("Thu: 7:00 am - 6:00 pm");
+        jPanel1.add(jLabel31, new org.netbeans.lib.awtextra.AbsoluteConstraints(590, 1530, -1, -1));
+
+        jLabel32.setFont(new java.awt.Font("Segoe UI Semilight", 0, 12)); // NOI18N
+        jLabel32.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel32.setText("Fri: 7:00 am - 6:00 pm");
+        jPanel1.add(jLabel32, new org.netbeans.lib.awtextra.AbsoluteConstraints(593, 1550, 120, -1));
+
+        jLabel34.setFont(new java.awt.Font("Segoe UI Semilight", 0, 12)); // NOI18N
+        jLabel34.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel34.setText("Mon: 7:00 am - 6:00 pm");
+        jPanel1.add(jLabel34, new org.netbeans.lib.awtextra.AbsoluteConstraints(590, 1470, -1, -1));
+
+        Shop1.setBackground(new java.awt.Color(51, 0, 0));
+        Shop1.setFont(new java.awt.Font("Segoe UI Light", 0, 12)); // NOI18N
+        Shop1.setForeground(new java.awt.Color(255, 255, 255));
+        Shop1.setText("Shop");
+        Shop1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                Shop1ActionPerformed(evt);
+            }
+        });
+        jPanel1.add(Shop1, new org.netbeans.lib.awtextra.AbsoluteConstraints(440, 30, 60, -1));
+
+        Services.setBackground(new java.awt.Color(51, 0, 0));
+        Services.setForeground(new java.awt.Color(255, 255, 255));
+        Services.setText("Services");
+        Services.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                ServicesActionPerformed(evt);
+            }
+        });
+        jPanel1.add(Services, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 30, -1, -1));
+
+        background.setIcon(new javax.swing.ImageIcon("C:\\Users\\Noreen Grace G\\OneDrive\\Pictures\\Documents\\NetBeansProjects\\Homepage Design\\src\\pictures\\background.jpg")); // NOI18N
+        background.setText("jLabel1");
+        jPanel1.add(background, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 780, 1420));
 
         jLabel18.setIcon(new javax.swing.ImageIcon("C:\\Users\\Noreen Grace G\\OneDrive\\Pictures\\Documents\\NetBeansProjects\\BeautySalonAndSpa\\src\\Pictures\\993648930faa6d673ed137a215c86107.jpg")); // NOI18N
         jLabel18.setText("jLabel18");
-        jPanel1.add(jLabel18, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 1360, 770, 240));
-
-        background.setIcon(new javax.swing.ImageIcon("C:\\Users\\Noreen Grace G\\OneDrive\\Pictures\\Documents\\NetBeansProjects\\BeautySalonAndSpa\\src\\Pictures\\f805490e6114621b71df0c717e00bd33.jpg")); // NOI18N
-        background.setText("jLabel1");
-        jPanel1.add(background, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 780, 1420));
+        jPanel1.add(jLabel18, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 1410, 770, 190));
 
         jScrollPane1.setViewportView(jPanel1);
 
@@ -256,19 +330,59 @@ public class Homepage extends javax.swing.JFrame {
 
     private void HomeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_HomeActionPerformed
         // TODO add your handling code here:
+         JOptionPane.showMessageDialog(this, "Home button clicked!");
     }//GEN-LAST:event_HomeActionPerformed
-
+  
+    
+    
     private void AboutUsActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_AboutUsActionPerformed
         // TODO add your handling code here:
+         AboutUs aboutUs = new AboutUs();
+        aboutUs.setVisible(true);
+        this.setVisible(false); 
     }//GEN-LAST:event_AboutUsActionPerformed
-
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+     
+    private void ContactsActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ContactsActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jButton1ActionPerformed
-
+        Contacts contacts = new Contacts();
+        contacts.setVisible(true);
+        this.setVisible(false);
+    }//GEN-LAST:event_ContactsActionPerformed
+     
     private void BookAppointmentActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BookAppointmentActionPerformed
         // TODO add your handling code here:
+        Booking booking = new Booking();
+        booking.setVisible(true);
+        this.setVisible(false);
     }//GEN-LAST:event_BookAppointmentActionPerformed
+
+    private void ServicesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ServicesActionPerformed
+        // TODO add your handling code here:
+        Services services = new Services();
+        services.setVisible(true);
+        this.setVisible(false);
+    }//GEN-LAST:event_ServicesActionPerformed
+
+    private void Shop1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Shop1ActionPerformed
+        // TODO add your handling code here:
+        OurProducts shop1 = new OurProducts();
+        shop1.setVisible(true);
+        this.setVisible(false);
+    }//GEN-LAST:event_Shop1ActionPerformed
+
+    private void ShopActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ShopActionPerformed
+        // TODO add your handling code here:
+        OurProducts shop1 = new OurProducts();
+        shop1.setVisible(true);
+        this.setVisible(false);
+    }//GEN-LAST:event_ShopActionPerformed
+
+    private void bookingActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bookingActionPerformed
+        // TODO add your handling code here:
+        Booking booking = new Booking();
+        booking.setVisible(true);
+        this.setVisible(false);
+    }//GEN-LAST:event_bookingActionPerformed
 
     /**
      * @param args the command line arguments
@@ -308,12 +422,13 @@ public class Homepage extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton AboutUs;
     private javax.swing.JButton BookAppointment;
+    private javax.swing.JButton Contacts;
     private javax.swing.JButton Home;
+    private javax.swing.JButton Services;
     private javax.swing.JButton Shop;
+    private javax.swing.JButton Shop1;
     private javax.swing.JLabel background;
-    private javax.swing.JButton jButton1;
-    private javax.swing.JButton jButton5;
-    private javax.swing.JButton jButton7;
+    private javax.swing.JButton booking;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
@@ -328,7 +443,19 @@ public class Homepage extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel20;
     private javax.swing.JLabel jLabel21;
+    private javax.swing.JLabel jLabel22;
+    private javax.swing.JLabel jLabel23;
+    private javax.swing.JLabel jLabel24;
+    private javax.swing.JLabel jLabel25;
+    private javax.swing.JLabel jLabel26;
+    private javax.swing.JLabel jLabel27;
+    private javax.swing.JLabel jLabel28;
+    private javax.swing.JLabel jLabel29;
     private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel30;
+    private javax.swing.JLabel jLabel31;
+    private javax.swing.JLabel jLabel32;
+    private javax.swing.JLabel jLabel34;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
@@ -338,6 +465,5 @@ public class Homepage extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel1;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JLabel nailPic;
-    private javax.swing.JButton services;
     // End of variables declaration//GEN-END:variables
 }
